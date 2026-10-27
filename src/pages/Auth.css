@@ -1,0 +1,182 @@
+/* ==========================================================================
+   MEDQ Authentication Pages - Blue + Silver + White Design System
+   ========================================================================== */
+
+.auth-page-wrapper {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.25rem;
+  background: var(--bg-app);
+}
+
+.auth-card-shell {
+  width: 100%;
+  max-width: 440px;
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+.auth-card-shell.max-w-500 {
+  max-width: 500px;
+}
+
+.auth-card-top {
+  margin-bottom: 1.75rem;
+}
+
+.auth-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--primary-50);
+  border: 1px solid var(--primary-200);
+  margin-bottom: 0.85rem;
+}
+
+.auth-card-top h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 0.25rem;
+}
+
+.auth-card-top p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.auth-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.auth-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--slate-400);
+  pointer-events: none;
+}
+
+.form-input.with-icon {
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+}
+
+.auth-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--slate-400);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.auth-password-toggle:hover {
+  color: var(--slate-600);
+}
+
+.forgot-pass-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-600);
+  text-decoration: none;
+}
+
+.forgot-pass-link:hover {
+  text-decoration: underline;
+}
+
+.auth-footer-prompt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.text-bold {
+  font-weight: 700;
+  color: var(--primary-600);
+  text-decoration: none;
+}
+
+.text-bold:hover {
+  text-decoration: underline;
+}
+
+/* Quick Demo Logins */
+.demo-credentials-box {
+  background: var(--slate-50);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.demo-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: var(--slate-600);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.demo-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.demo-btn {
+  border: 1px solid var(--border-color);
+  font-family: var(--font-heading);
+  font-size: 0.775rem;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.admin-demo {
+  background: var(--primary-50);
+  color: var(--primary-700);
+  border-color: var(--primary-200);
+}
+
+.admin-demo:hover {
+  background: var(--primary-100);
+}
+
+.customer-demo {
+  background: #F0FDF4;
+  color: #15803D;
+  border-color: #BBF7D0;
+}
+
+.customer-demo:hover {
+  background: #DCFCE7;
+}
+
+@media (max-width: 640px) {
+  .auth-card-shell {
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+}

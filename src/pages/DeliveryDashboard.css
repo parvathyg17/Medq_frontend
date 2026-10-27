@@ -1,0 +1,117 @@
+/* ==========================================================================
+   MEDQ Delivery Personnel Dashboard - Blue + Silver + White Design System
+   ========================================================================== */
+
+.delivery-dashboard-wrapper {
+  background: var(--bg-app);
+  min-height: calc(100vh - 140px);
+  padding: 2rem 0 4rem;
+}
+
+.delivery-hero {
+  background: var(--navy-900);
+  color: #FFFFFF;
+  padding: 2.25rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.delivery-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.delivery-avatar {
+  width: 58px;
+  height: 58px;
+  background: var(--primary-600);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.delivery-stats-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.delivery-stat-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.15);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1.15rem;
+  text-align: center;
+  min-width: 100px;
+}
+
+.delivery-stat-pill .num {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  display: block;
+  color: #FFFFFF;
+}
+
+.delivery-stat-pill .lbl {
+  font-size: 0.725rem;
+  color: var(--slate-300);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.delivery-order-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.delivery-order-card:hover {
+  border-color: var(--primary-300);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.06);
+}
+
+.delivery-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.delivery-dest-box {
+  background: var(--slate-50);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.action-bar-delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-color);
+}

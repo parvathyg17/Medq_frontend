@@ -1,0 +1,123 @@
+/* ==========================================================================
+   MEDQ Clinical Help & Contact - Blue + Silver + White Design System
+   ========================================================================== */
+
+.help-page {
+  padding-bottom: 5rem;
+  background: var(--bg-app);
+  min-height: calc(100vh - 160px);
+}
+
+.help-hero-banner {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.help-main-icon {
+  color: var(--primary-600);
+}
+
+.max-w-650 {
+  max-width: 650px;
+}
+
+.help-layout-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.faq-area-block h2 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.faq-accordion-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.faq-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.faq-card.open {
+  border-color: var(--primary-400);
+}
+
+.faq-question-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15rem 1.35rem;
+  cursor: pointer;
+  background: #FFFFFF;
+  transition: all var(--transition-fast);
+}
+
+.faq-question-row:hover {
+  background: var(--slate-50);
+}
+
+.faq-question-row h3 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.faq-question-row svg {
+  color: var(--primary-600);
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+}
+
+.faq-answer-block {
+  padding: 1rem 1.35rem 1.25rem;
+  background: var(--slate-50);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.875rem;
+  color: var(--slate-700);
+  line-height: 1.6;
+}
+
+.faq-answer-block p {
+  margin: 0;
+}
+
+.contact-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.contact-card h2 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+@media (max-width: 992px) {
+  .help-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

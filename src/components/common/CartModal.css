@@ -1,0 +1,232 @@
+/* ==========================================================================
+   MEDQ Cart Modal - Blue + Silver + White Design System
+   ========================================================================== */
+
+.cart-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.cart-modal-shell {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1);
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+  animation: modalScaleUp 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.cart-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background: #FFFFFF;
+}
+
+.modal-title-cluster {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.icon-success {
+  color: var(--success);
+}
+
+.icon-error {
+  color: var(--danger);
+}
+
+.icon-warning {
+  color: var(--warning);
+}
+
+.icon-primary {
+  color: var(--primary-600);
+}
+
+.cart-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin: 0;
+}
+
+.cart-modal-close {
+  background: none;
+  border: none;
+  color: var(--slate-400);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.cart-modal-close:hover {
+  background: var(--slate-100);
+  color: var(--navy-900);
+}
+
+.cart-modal-body {
+  padding: 1.5rem;
+}
+
+/* Product Preview Row */
+.modal-product-preview {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  background: var(--slate-50);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.preview-image-box {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.preview-image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.preview-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.preview-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin: 0 0 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preview-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.preview-price {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.preview-qty {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.limit-rule-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--primary-700);
+}
+
+.modal-desc-text {
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: var(--slate-700);
+  margin: 0 0 1rem;
+}
+
+.modal-desc-text.text-danger-msg {
+  color: #991B1B;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+}
+
+.modal-cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: #EFF6FF;
+  border: 1px solid var(--primary-200);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  color: var(--navy-900);
+}
+
+.summary-total-amount {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-700);
+}
+
+.cart-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--slate-50);
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 520px) {
+  .cart-modal-footer {
+    flex-direction: column-reverse;
+  }
+  .cart-modal-footer .btn {
+    width: 100%;
+  }
+}

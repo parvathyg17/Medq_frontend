@@ -1,0 +1,252 @@
+/* ==========================================================================
+   MEDQ Footer - Blue + Silver + White Design System
+   ========================================================================== */
+
+.med-footer {
+  background: var(--navy-900);
+  color: var(--slate-300);
+  margin-top: 5rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.1);
+}
+
+.footer-trust-strip {
+  background: var(--navy-800);
+  padding: 2.25rem 0;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.08);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trust-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60A5FA;
+  flex-shrink: 0;
+}
+
+.trust-item h4 {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.trust-item p {
+  color: var(--slate-400);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Main Footer Content */
+.footer-main {
+  padding: 3.5rem 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 1.4fr;
+  gap: 3rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.text-accent {
+  color: var(--primary-500);
+}
+
+.brand-pill {
+  background: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  color: #93C5FD;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--slate-400);
+  margin: 1.15rem 0 1.5rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.825rem;
+  color: var(--slate-300);
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--slate-300);
+}
+
+.contact-line svg {
+  color: var(--primary-400);
+  flex-shrink: 0;
+}
+
+.footer-col h3 {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.15rem;
+  position: relative;
+  padding-bottom: 0.45rem;
+}
+
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: var(--primary-500);
+  border-radius: 2px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links a {
+  color: var(--slate-400);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: #FFFFFF;
+  padding-left: 4px;
+}
+
+.compliance-box {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.1);
+}
+
+.compliance-title {
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--slate-400);
+  margin-bottom: 0.65rem;
+}
+
+.certification-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.cert-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.12);
+  color: var(--slate-300);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.cert-pill svg {
+  color: var(--success);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(226, 232, 240, 0.08);
+  padding: 1.25rem 0;
+  font-size: 0.825rem;
+  color: var(--slate-400);
+}
+
+.bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bottom-links a {
+  color: var(--slate-400);
+  text-decoration: none;
+  font-size: 0.825rem;
+  transition: color var(--transition-fast);
+}
+
+.bottom-links a:hover {
+  color: #FFFFFF;
+}
+
+.bottom-links .sep {
+  color: var(--slate-600);
+}
+
+@media (max-width: 992px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bottom-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
